@@ -78,6 +78,7 @@ class TestVarasto(unittest.TestCase):
         
     def test_tilavuus_nolla(self):
         varasto = Varasto(0)
+        
         self.assertAlmostEqual(varasto.tilavuus,0)
         
     def test__str__(self):
