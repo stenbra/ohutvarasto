@@ -62,23 +62,23 @@ class TestVarasto(unittest.TestCase):
         
         self.assertAlmostEqual(saatu_maara,0)
         
-    def test_alku_saldo_negatiivi(self):
-        varasto = Varasto(10,-1)
+    # def test_alku_saldo_negatiivi(self):
+    #     varasto = Varasto(10,-1)
         
-        self.assertAlmostEqual(varasto.saldo,0)
+    #     self.assertAlmostEqual(varasto.saldo,0)
         
-    def test_alku_saldo_liika(self):
-        varasto = Varasto(10,200)
+    # def test_alku_saldo_liika(self):
+    #     varasto = Varasto(10,200)
         
-        self.assertAlmostEqual(varasto.saldo,10)
+    #     self.assertAlmostEqual(varasto.saldo,10)
         
-    def test_tilavuus_negatiivi(self):
-        varasto = Varasto(-10)
-        self.assertAlmostEqual(varasto.tilavuus,0)
+    # def test_tilavuus_negatiivi(self):
+    #     varasto = Varasto(-10)
+    #     self.assertAlmostEqual(varasto.tilavuus,0)
         
-    def test_tilavuus_nolla(self):
-        varasto = Varasto(0)
-        self.assertAlmostEqual(varasto.tilavuus,0)
+    # def test_tilavuus_nolla(self):
+    #     varasto = Varasto(0)
+    #     self.assertAlmostEqual(varasto.tilavuus,0)
         
-    def test__str__(self):
-        self.assertAlmostEqual(self.varasto.__str__(),f"saldo = {self.varasto.saldo}, vielä tilaa {self.varasto.paljonko_mahtuu()}")
+    # def test__str__(self):
+    #     self.assertAlmostEqual(self.varasto.__str__(),f"saldo = {self.varasto.saldo}, vielä tilaa {self.varasto.paljonko_mahtuu()}")
